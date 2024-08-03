@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Libary Book project</h1>
+            <button class="main-button" id="modalWindow">Add book +</button>
+          </div>
+          <div id="modalContent"  class="ad actv">
+            <div class="modal active " id="addBookModal">
+                <div class="add-book-form " id="addBookForm">
+                  <h3>Add new book</h3>
+                  <input class="input" type="text" id="title" placeholder="Title" required="" maxlength="100">
+                  <p class="error-msg" id="errorMsg"></p>
+                  <input class="input" type="text" id="author" placeholder="Author" required="" maxlength="100">
+                  <input class="input" type="number" id="pages" placeholder="Pages" required="" max="10000">
+                  <div class="is-read">
+                    <label for="is-read">Have you read it?</label>
+                    <input class="checkbox" type="checkbox" id="isRead">
+                  </div>
+                  <button class="btn btn-light-green"   id="addBookButton">Submit</button>
+                  <button class="btn btn-light-green"   id="removeModal">Cancel</button>
+                </div>
+              </div>
+        </div>
+        <div class="grid" id="bookList">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
